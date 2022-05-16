@@ -141,15 +141,25 @@
       </div>
       </article>
       <script type="text/javascript">
+        const Calc={
+          numberOne: " ",
+          numberTwo: " "
+        }
         document.querySelector('.sectionNumber > p:nth-child(16)').addEventListener('click',()=>{
           console.log("uno");
-          document.querySelector('.display').value=+1;
+          Calc.numberOne=+1;
+          document.querySelector('.display').value=+Calc.numberOne;
+          // console.log(this.value);
         });
         document.querySelector('.sectionNumber > p:nth-child(17)').addEventListener('click',()=>{
-          document.querySelector('.display').value=+2;
+          Calc.numberOne=+2;
+          document.querySelector('.display').value=+Calc.numberOne;
+          // console.log(this.value);
         });
         document.querySelector('.sectionNumber > p:nth-child(18)').addEventListener('click',()=>{
-          document.querySelector('.display').value=+3;
+          Calc.numberOne=+3;
+          document.querySelector('.display').value=+Calc.numberOne;
+          // console.log(this.value);
         });
 
 
